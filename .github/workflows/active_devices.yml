@@ -1,7 +1,6 @@
 name: Build UEFI for active devices
 on:
   push:
-    branches: ["main"]
     paths:
       - 'Binaries'
       - 'Common/**'
