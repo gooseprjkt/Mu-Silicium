@@ -1,28 +1,7 @@
 name: Build UEFI for active devices
 on:
-  push:
-    paths:
-      - 'Binaries'
-      - 'Common/**'
-      - 'Features/**'
-      - 'Mu_Basecore'
-      - 'MuPatches/**'
-      - 'Platforms/**'
-      - 'Silicon/**'
-      - 'Silicium-ACPI'
   workflow_dispatch:
-  pull_request:
-    types: [opened, reopened]
-    paths:
-      - 'Binaries'
-      - 'Common/**'
-      - 'Features/**'
-      - 'Mu_Basecore'
-      - 'MuPatches/**'
-      - 'Platforms/**'
-      - 'Silicon/**'
-      - 'Silicium-ACPI'
-    inputs:
+   inputs:
       DEVICE:
         description: Device codename
         required: true
